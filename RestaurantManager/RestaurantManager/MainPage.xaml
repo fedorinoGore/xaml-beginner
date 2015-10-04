@@ -30,8 +30,8 @@
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Text="Restaurant Manager" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontFamily="Assets/HamburgerHeavenNF.ttf#Hamburger Heaven NF"/>
         <TextBlock Grid.Row="1" Grid.ColumnSpan="2" Text="Internal Test Version" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Button x:Name="ordersBtn" Style="{StaticResource MyButton}" Content="**Go to Orders View**" Grid.Row="2" Grid.Column="0"/>
-        <Button x:Name="submitBtn" Style="{StaticResource MyButton}" Content="**Submit Order**" Grid.Row="2" Grid.Column="1"/>
+        <Button x:Name="ordersBtn" Style="{StaticResource MyButton}" Content="Go to Orders View" Grid.Row="2" Grid.Column="0" Click="ordersBtn_Click"/>
+        <Button x:Name="submitBtn" Style="{StaticResource MyButton}" Content="Submit Order" Grid.Row="2" Grid.Column="1" Click="submitBtn_Click"/>
 
     </Grid>
 </Page>
