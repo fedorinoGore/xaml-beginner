@@ -35,17 +35,23 @@
         <ListView Grid.Column="0" Grid.Row="1" Grid.RowSpan="3" />
 
         <ListView x:Name="orderListView" Grid.Column="2" Grid.Row="2" Grid.RowSpan="2"/>
-        
-        <TextBlock Grid.Row="1" Grid.Column="1"
+        <Viewbox Grid.Row="1" Grid.Column="1" StretchDirection="DownOnly"  Stretch="Uniform">
+        <TextBlock 
                    Text="Special Requests:"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
-                   FontFamily="Hamburger Heaven NF"/>
-        <TextBlock Grid.Row="1" Grid.Column="2"
-                   Text="Order Items:"
+                   FontFamily="Hamburger Heaven NF"
+                    MaxWidth="180"
+                 TextWrapping="Wrap"/>
+        </Viewbox>
+        <Viewbox Grid.Row="1" Grid.Column="2" StretchDirection="DownOnly"  Stretch="Uniform">
+        <TextBlock Text="Order Items:"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
-                   FontFamily="Hamburger Heaven NF"/>
+                   FontFamily="Hamburger Heaven NF"
+                   MaxWidth="140"
+                 TextWrapping="Wrap"/>
+        </Viewbox>
         <Button x:Name="addToOrderBtn" Style="{StaticResource MyButton}"
                 Content="Add to Order"
                 Grid.Row="4" Grid.Column="0"/>
